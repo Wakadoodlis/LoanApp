@@ -1,0 +1,261 @@
+/* body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+.loans-wraper a img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  margin-bottom: 5rem;
+}
+
+.loans-wraper a {
+  text-decoration: none;
+  transition: .5s;
+}
+
+.loans-wraper a img:hover {
+  width: 320px;
+  height: 310px;
+  transition: .5s;
+
+
+}
+
+.loans-wraper a h3 {
+  color: #003C5A;
+}
+
+.loans-wraper a h3:hover {
+  color: #6495ed;
+}
+
+
+.loans-wraper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  color: #003C5A;
+
+}
+
+.loans-wraper a p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  padding: 55px;
+  height: 110px;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+/* index */
+
+.main-section {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* 
+-=-==-=-==-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+-==-==-    QUICK LOAN     -=-=-=-=-=-=-=--=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+
+.nav a {
+  padding-left: 3rem;
+  text-decoration: none;
+  transition: .6s;
+}
+
+.nav a:hover {
+  color: #191970;
+}
+
+.active {
+  color: #191970;
+}
+
+.loan,
+.wraper {
+  /* background-image: linear-gradient(to right top, #365788, #0083af, #00aeb2, #43d494, #c7ef6f); */
+  background-image: linear-gradient(to right top, #9cbae8, #57c7ec, #03d0cf, #5ad296, #a7cb58);
+}
+
+.loanWraper,
+.wraper {
+  color: #003C5A;
+  height: 680px;
+}
+
+.loan-discription h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.loan-discription ul {
+  margin-bottom: 4rem;
+}
+
+.form-wraper {
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px #3b3b3b;
+}
+
+.toBig {
+  width: 250px;
+  height: 50px;
+  background-color: rgb(245, 241, 241);
+  box-shadow: 2px 6px 5px #777676;
+  font-weight: 500;
+  border-radius: 2px;
+  font-size: .9rem;
+  z-index: 99;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-top: .8rem;
+}
+
+/* center in form */
+small#loanHelp.form-text.text-muted,
+small#termHelp.form-text.text-muted {
+  text-align: center;
+}
+
+label.loanLabel {
+  display: block;
+  text-align: center;
+
+}
+
+input#loanAmount.form-control,
+input#loanTerm.form-control,
+input#salary.form-control {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.payMonth h5 {
+  font-size: 16px;
+}
+
+.payMonth h4 {
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.payMonth h5:last-of-type {
+  text-align: center;
+}
+
+/* button */
+
+button#quickBtn.btn.btn-outline-primary,
+button#quickBtnH.btn.btn-outline-primary,
+button#quickBtnC.btn.btn-outline-primary {
+  margin-left: 5rem;
+  /* background-color: #a7cb58; */
+  border-color: #a7cb58;
+  color: #a7cb58;
+  font-weight: 500;
+}
+
+button#quickBtn.btn.btn-outline-primary:hover,
+button#quickBtnH.btn.btn-outline-primary:hover,
+button#quickBtnC.btn.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #a7cb58;
+}
+
+
+/* 
+-=-==-=-==-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+-==-==-    House LOAN     -=-=-=-=-=-=-=--=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+.houseLoane-wraper {
+  height: 900px;
+}
+
+
+.house-form {
+  width: 350px;
+  height: 620px;
+
+}
+
+input#loanAmountH.form-control.bg,
+input#loanTermH.form-control.bg,
+input#salaryH.form-control.bg,
+input#childrenH.form-control.bg {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button#quickBtnH.btn.btn-outline-primary.cent {
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+
+}
+
+
+/* 
+-=-==-=-==-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+-==-==-    Consumpting LOAN     -=-=-=-=-=-=-=--=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+.com-loanWraper {
+  height: 800px;
+}
+
+.consForm-wraper {
+  width: 320px;
+  height: 500px;
+
+}
+
+input#loanAmountC.form-control.bg,
+input#loanTermC.form-control.bg {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button#quickBtnC.btn.btn-outline-primary.con-cen {
+  margin-left: 6rem;
+
+}
+
+.selectType {
+  width: 70%;
+  border: 1px solid #ced4da;
+  margin-left: 2.6rem;
+  background-color: #fff;
+}
+
+/*  footer */
+footer {
+  text-align: center;
+  height: 50px;
+  background-image: linear-gradient(to top right, #a7cb58, #57c7ec, #9cbae8, #03d0cf, #a7cb58);
+}
+
+footer p {
+  padding-top: .7rem;
+  font-size: .7rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <!-- main style -->
+  <link rel="stylesheet" href="../style/loans-style.css" />
+  <title>House loan</title>
+</head>
+
+<body class="loan">
+  <div class="loanWraper houseLoane-wraper">
+    <div class="container-fluid">
+      <header>
+        <nav class="nav">
+          <a href="../../index.html">Main</a>
+          <a href="quick-loan.html">Quick loan</a>
+          <a href="house-loan.html" class="active">House loan</a>
+          <a href="consumer-loan.html">Consumption loan</a>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-5 mr-2 loan-discription">
+          <h1>House loan</h1>
+          <hr>
+          <ul>
+            <li>Interest - 2 % ;</li>
+            <li>Maximum Loan amount depends on Your salary and if You have childrens;</li>
+            <li>Loan term up to 30 years ;</li>
+            <li>For Your BIG dreams to come true!</li>
+          </ul>
+          <p> For example, if Your loan is 20 000 Euros, for 10 years term, Your salary is 1200 Euros/month and You
+            dont have any children, then Your monthly payment would be 170 Euros and maximum loan amount would be 96
+            000 Euros. If You have 1 child - Maximum loan amount would be 84 000 Euros.You have to ensure Your
+            childrens welfare.</p>
+
+        </div>
+        <div class="col-md-5">
+          <div class="form-wraper house-form" id="form-wr">
+            <form id="myForm">
+              <!-- LOAN AMOUNT -->
+              <div class="form-group">
+                <label for="loanAmount" class="loanLabel">Loan amount</label>
+                <input type="number" class="form-control bg" id="loanAmountH" aria-describedby="emailHelp" autofocus
+                  value="2000">
+                <small id="loanHelp" class="form-text text-muted ">Amount depends from salary </small>
+              </div>
+              <!-- LOAN TERM -->
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="loanLabel">Loan term</label>
+                <input type="number" class="form-control bg" id="loanTermH" value="10" max="30">
+                <small id="termHelp" class="form-text text-muted">Up to 30 year</small>
+              </div>
+              <!-- SALARY -->
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="loanLabel">Your salary</label>
+                <input type="number" class="form-control bg" id="salaryH" value="1200">
+                <small id="termHelp" class="form-text text-muted">Your salary in month</small>
+              </div>
+              <!-- CHILDREN -->
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="loanLabel">Children</label>
+                <input type="number" class="form-control bg" id="childrenH" value="0">
+                <small id="termHelp" class="form-text text-muted">How many children do You have?</small>
+              </div>
+              <button class="btn btn-outline-primary cent" id="quickBtnH"> Culculate</button>
+              <div class="payMonth" id="payMonth">
+                <h4>Monthly payments: <span id="monthlyh"></span> </h4>
+                <h5 class="pt-1"> Maximum Loan amount:</h5>
+                <h5 id="displayH"></h5>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="../../dist/bundle.js"></script>
+
+</html>

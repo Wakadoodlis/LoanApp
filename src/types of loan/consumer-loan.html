@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <!-- main style -->
+  <link rel="stylesheet" href="../style/loans-style.css" />
+  <title>Consumer Loan</title>
+</head>
+
+<body class="loan">
+  <div class="loanWraper com-loanWraper">
+    <div class="container-fluid">
+      <header>
+        <nav class="nav">
+          <a href="../../index.html">Main</a>
+          <a href="quick-loan.html">Quick loan</a>
+          <a href="house-loan.html">House loan</a>
+          <a href="consumer-loan.html" class="active">Consumption loan</a>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-5 mr-2 loan-discription">
+          <h1>Consumer Loan</h1>
+          <hr>
+          <ul>
+            <li>Interests: 10 % for Vechile; 15 % for Allotment and 20% for Structure;</li>
+            <li>Loan term up to 5 years ;</li>
+            <li>For Your daily dreams to come true!</li>
+          </ul>
+          <p>For example, if Your loan is 5000 Euros for Vechile, loan term is 1 year, then Your monthly payment would
+            be
+            458 Euros.
+            The same amount for Allotment would be 479 Euros, and for Structure - 500 Euros.</p>
+
+        </div>
+        <div class="col-md-5">
+          <div class="form-wraper consForm-wraper" id="form-wr">
+            <form id="myForm">
+              <!-- loan amount -->
+              <div class="form-group">
+                <label for="loanAmount" class="loanLabel">Loan amount</label>
+                <input type="number" class="form-control bg" id="loanAmountC" aria-describedby="emailHelp" autofocus
+                  value="5000">
+                <small id="loanHelp" class="form-text text-muted ">Up to 10 000 €</small>
+              </div>
+              <!-- loan term -->
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="loanLabel">Loan term</label>
+                <input type="number" class="form-control bg" id="loanTermC" value="1">
+                <small id="termHelp" class="form-text text-muted">Up to 5 years</small>
+              </div>
+              <!-- select -->
+              <select id="itemTypeC" class="selectType">
+                <option value="Vechile">Vechile</option>
+                <option value="Allotment">Allotment</option>
+                <option value="Structure">Structure</option>
+              </select>
+              <small id="loanHelp" class="form-text text-muted mb-4">Select item type </small>
+
+              <!-- culculate button -->
+              <button class="btn btn-outline-primary con-cen" id="quickBtnC"> Culculate</button>
+              <div class="payMonth" id="payMonth">
+                <h5 class="pt-3">Monthly payments:</h5>
+                <h5 id="displayC"></h5>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="../../dist/bundle.js"></script>
+
+</html>
