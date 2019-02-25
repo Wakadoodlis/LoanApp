@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- main style -->
+    <link rel="stylesheet" href="src/style/loans-style.css" />
+    <title>Loan</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous" />
-  <!-- main style -->
-  <link rel="stylesheet" href="src/style/loans-style.css" />
-  <title>Loan</title>
-</head>
+  <body>
+    <div class="wraper">
+      <div class="container">
+        <section class="main-section">
+          <h1>Welcome to Loan counting application</h1>
+          <h4>
+            Please chose what kind of loan monthly payments You woul like to
+            count.
+          </h4>
+          <hr />
+          <br />
 
-<body>
-  <div class="wraper">
-    <div class="container">
-      <section class="main-section">
-        <h1>Welcome to Loan counting application</h1>
-        <h4>Please chose which loan monthly payments You want to count.</h4>
-        <hr>
-        <br>
+          <div class="loans-wraper">
+            <a href="src/types of loan/quick-loan.html">
+              <h3>Quick loan</h3>
 
-        <div class="loans-wraper">
-
-          <a href="src/types of loan/quick-loan.html">
-            <h3>Quick loan</h3>
-
-            <img src="src/img/qloan.jpg" alt="quick loan" />
-          </a>
-          <a href="src/types of loan/house-loan.html">
-            <h3>House loan</h3>
-            <img src="src/img/hloan.png" alt="house loan" />
-          </a>
-          <a href="src/types of loan/consumer-loan.html">
-            <h3>Consumer loan</h3>
-            <img src="src/img/cloan.jpg" alt="consumer loan" />
-          </a>
-        </div>
-      </section>
+              <img src="src/img/qloan.jpg" alt="quick loan" />
+            </a>
+            <a href="src/types of loan/house-loan.html">
+              <h3>House loan</h3>
+              <img src="src/img/hloan.png" alt="house loan" />
+            </a>
+            <a href="src/types of loan/consumer-loan.html">
+              <h3>Consumer loan</h3>
+              <img src="src/img/cloan.jpg" alt="consumer loan" />
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
-  </div> <!-- wraper end-->
-  <footer>
-    <p>&copy; Copyright 2018 Martynas</p>
-  </footer>
-</body>
-
-
-
+    <!-- wraper end-->
+    <footer>
+      <p>&copy; Copyright 2018 Martynas</p>
+    </footer>
+  </body>
 </html>
